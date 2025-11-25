@@ -1,0 +1,17 @@
+Condition A - VPN active
+
+Ping -c 50 127.0.0.1 (first go) :
+--- 127.0.0.1 ping statistics ---
+50 packets transmitted, 50 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 0.188/0.317/0.395/0.057 ms
+
+Ping -c 50 127.0.0.1 (second go) :
+--- 127.0.0.1 ping statistics ---
+50 packets transmitted, 50 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 0.171/0.308/0.398/0.063 ms
+
+Ping -c 50 127.0.0.1 (third go) : --- 127.0.0.1 ping statistics ---
+50 packets transmitted, 50 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 0.174/0.298/0.408/0.057 ms
+
+Average: 0.059 ms
