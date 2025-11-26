@@ -1,0 +1,32 @@
+1. Environment Setup
+- macOS, M2 chip, 512 gb RAM
+- Tools: iperf3, ping, http, Activity Monitor, XVPN, SSH
+- Installs: Homebrew
+
+2. VPN setup
+Simple download XVPN: https://xvpn.io/download
+**Close background applications to minimize noise
+- Ensure stable localhost if using localhost
+
+- Launch XVPN
+- Verify encryption results
+- Confirm tunnels established
+
+3. SSH Tunnel Setup
+- Used ssh -L command to establish tunnel
+
+Command used:
+Ssh -L 5201:127.0.0.1:5201 user@localhost
+
+4. Traffic Generation
+- iperf3 -c 127.0.0.1 (for throughput testing)
+- ping 127.0.0.1 (for latency testing)
+
+5. Monitoring Tools
+- Htop, Activity Monitor: Leveraged for viewing CPU usage percentages
+
+6. Data Collected
+- Latency (ms)
+- Throughput (Gbps)
+- CPU Usage (%)
+
